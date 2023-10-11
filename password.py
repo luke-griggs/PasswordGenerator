@@ -37,8 +37,19 @@ while i < 9:
     eight_char_password += rand_char() 
     i += 1  
 
-test = eight_char_password
-print(test)
+ten_char_password = " "
+
+e = 0
+while e < 10:
+    ten_char_password += rand_char()
+    e += 1
+
+user_selection = input("would you like an 8 or 10 character password?")
+temp = int(user_selection)
+if temp == 8:
+    print(f"your generated password is{eight_char_password}")
+elif temp == 10:
+    print(f"your generated password is{ten_char_password}")
 
 
     
